@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C O N T A C T</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/023712d514.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-btn{
+            text-decoration: none;
+            font-weight: 500;
+        }
+        abbr{
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <a href="index.html">
+            <img src="images/logo-org.png" class="logo" alt="Organization Logo"> <!-- It's good practice to provide alt text -->
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="#" id="close"><i class="fa-solid fa-xmark"></i></a></li> <!-- Corrected the closing tag for <a> -->
+            </ul>
+        </div>
+    
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent times"></i> <!-- Likely needs correction in class naming -->
+        </div>
+    </div>
+    
+    <div id="page-header" class="contact-header">
+      
+        <p>Contact US</p>
+    </div>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency location or contact us today</h2>
+            <h3>Head Shop</h3>
+            <ul>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>Koteshwor, Kathmandu</p>
+                </li>
+                <li>
+                    <i class="fal fa-envelop"></i>
+                    <p>info@example.com</p>
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p>+0 123-456-7890</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>Sunday to Friday 8:00am to 10pm</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14133.192382056472!2d85.34432160000003!3d27.677180149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19f2804a02bf%3A0x85468199859b2d8d!2sKoteshwor%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1710920868324!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <script>
+            ScrollReveal({ 
+                distance: '100px',
+                duration: 2500,
+                delay: 100
+            });
+            ScrollReveal().reveal('.details', { delay: 100, origin: 'left' });
+            ScrollReveal().reveal('.map2', { delay: 200, origin: 'right' });
+        
+            
+    
+    
+        </script>
+    </section>
+
+    <section class="e12" id="form-details">
+        <form action="send.php">
+            <span>YOUR MESSAGE</span>
+            <h2>We would like to hear to you</h2>
+            <input type="text" placeholder="Your name" required> 
+            <input type="number" placeholder="Your contact number" required> 
+            <input type="email" placeholder="Your Email ID" required> 
+            <textarea name="userComment" id="userComment" cols="30" rows="10" placeholder="Your Comment"></textarea>
+            <button class="normal">Submit</button>
+        </form>
+
+        <div class="myself">
+            <div>
+                <img src="images/Snapchat-1163441376.jpg" alt="">
+                <p><span>Sujan Bhatta</span> Developer of this Website <br> Phone: +0 123-456-7890 <br> Email:info@example.com</p>
+            </div>
+        </div>
+        <script>
+            ScrollReveal({ 
+                distance: '100px',
+                duration: 2500,
+                delay: 100
+            });
+            ScrollReveal().reveal('.myself', { delay: 100, origin: 'bottom' });
+            ScrollReveal().reveal('.e12', { delay: 200, origin: 'bottom' });
+        
+            
+    
+    
+        </script>
+    </section>
+    <div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/products/Color-Adidas-logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/104aaf9588c06584e2a69ec10a2f4660-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/Hermès.svg.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/028356d89002b529a74b41ac7ace233a-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/Screenshot_2024-02-23_131938_1708674559612-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="newsletter">
+        <div class="fccontainer">
+            <h1>Sign up and save</h1>
+            <p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+            <form action="newsletter.php" method="post">
+                <input type="email" name="email" class="email-input" placeholder="Enter your email">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+              </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="footer">
+            <div class="container-1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <a style="margin-bottom: 20px;" href="index.html"><img src="images/logo-org.png" alt=""></a>
+                        <h3>Download our App </h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                            <p>Secured Payment Gateway</p>
+                            <img src="images/pay.png" alt="">
+                        </div>
+                    </div>
+
+        
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul class="footer-ul">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul class="footer-ul">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">©Copyright 2024 - <a href="#"><b>SUJAN BHATTA</b></a></p>
+            </div>
+
+        </div>
+
+    </section>
+   
+    <script src="script.js"></script>
+</body>
+</html>

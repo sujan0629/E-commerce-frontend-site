@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L O G I N</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/023712d514.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-btn{
+            text-decoration: none;
+            font-weight: 500;
+        }
+        abbr{
+            text-decoration: none;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="header">
+        <a href="index.html">
+            <img src="images/logo-org.png" class="logo" alt="Organization Logo"> <!-- Added meaningful alt text -->
+        </a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="login.html">Login</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li><a href="#" id="close"><i class="fa-solid fa-xmark"></i></a></li> <!-- Fixed the missing closing tag for <a> -->
+            </ul>
+        </div>
+    
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i> <!-- Removed 'times' as it is not part of the class list for FontAwesome -->
+        </div>
+    </div>
+    
+    <div class="account-page">
+        <div class="container-1">
+            <div class="row">
+
+                <div class="col-2">
+                    <img class="xx" src="images/products/wallpaperflare.com_wallpaper__6_-removebg.png" style="width: 100%;" alt="">
+                </div>
+
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="h-btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="h-btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div>
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="images/products/Color-Adidas-logo-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/104aaf9588c06584e2a69ec10a2f4660-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/Hermès.svg.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/028356d89002b529a74b41ac7ace233a-removebg-preview.png" alt="">
+                    </div>
+                    <div class="col-5">
+                        <img src="images/products/Screenshot_2024-02-23_131938_1708674559612-removebg-preview.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="footer">
+            <div class="container-1">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <a style="margin-bottom: 20px;" href="index.html"><img src="images/logo-org.png" alt=""></a>
+                        <h3>Download our App </h3>
+                        <p>Download App for Android and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="images/play-store.png" alt="">
+                            <img src="images/app-store.png" alt="">
+                            <p>Secured Payment Gateway</p>
+                            <img src="images/pay.png" alt="">
+                        </div>
+                    </div>
+
+        
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul class="footer-ul">
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul class="footer-ul">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">©Copyright 2024 - <a href="#"><b>SUJAN BHATTA</b></a></p>
+            </div>
+
+        </div>
+
+    </section>
+   <script>
+
+    var LoginForm = document.getElementById("LoginForm");
+    var RegFrom = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+
+   </script>
+    <script src="script.js"></script>
+</body>
+</html>
