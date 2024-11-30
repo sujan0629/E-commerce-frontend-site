@@ -1,8 +1,6 @@
 Raw frontend design !!
 
-
-
- [LIVE PREVIEW](https://e-commerce-site-demo-sujan.netlify.app/)
+[LIVE PREVIEW](https://e-commerce-site-demo-sujan.netlify.app/)
 
 ## Demo Video
 
